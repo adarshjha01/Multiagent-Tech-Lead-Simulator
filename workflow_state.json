@@ -1,0 +1,31 @@
+{
+  "app_name": "Software Engineering Simulator",
+  "agent_ids": {
+    "scenario_generator": "69ec62bdbe4c8f6024bc4f39",
+    "code_mentor": "69ec62bd913abe53de549399"
+  },
+  "agents": [
+    {
+      "id": "69ec62bdbe4c8f6024bc4f39",
+      "name": "Scenario Generator",
+      "node_id": "scenario_generator",
+      "type": "text",
+      "model": "gpt-4.1",
+      "provider": "openai"
+    },
+    {
+      "id": "69ec62bd913abe53de549399",
+      "name": "Code Mentor",
+      "node_id": "code_mentor",
+      "type": "text",
+      "model": "gpt-4.1",
+      "provider": "openai"
+    }
+  ],
+  "rag_ids": {},
+  "schedules": {},
+  "response_schemas": {
+    "scenario_generator": "response_schemas/scenario_generator_response.json",
+    "code_mentor": "response_schemas/code_mentor_response.json"
+  }
+}

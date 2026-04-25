@@ -1,0 +1,58 @@
+{
+  "agent_name": "Code Mentor",
+  "agent_id": "69ec62bd913abe53de549399",
+  "description": "Reviews submitted code fixes against the original broken code and ticket requirements, providing detailed structured feedback with a technical grade",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "status": "string",
+    "message": "string",
+    "result": {
+      "verdict": "string",
+      "technical_score": "number",
+      "summary": "string",
+      "what_went_well": [
+        "string"
+      ],
+      "misconceptions": [
+        "string"
+      ],
+      "suggestions": [
+        "string"
+      ],
+      "corrected_code": "string",
+      "learning_resources": [
+        {
+          "title": "string",
+          "topic": "string"
+        }
+      ]
+    }
+  },
+  "example_response": {
+    "status": "sample string",
+    "message": "sample string",
+    "result": {
+      "verdict": "sample string",
+      "technical_score": 0,
+      "summary": "sample string",
+      "what_went_well": [
+        "sample string"
+      ],
+      "misconceptions": [
+        "sample string"
+      ],
+      "suggestions": [
+        "sample string"
+      ],
+      "corrected_code": "sample string",
+      "learning_resources": [
+        {
+          "title": "sample string",
+          "topic": "sample string"
+        }
+      ]
+    }
+  }
+}

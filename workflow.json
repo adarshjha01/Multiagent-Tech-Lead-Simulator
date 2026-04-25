@@ -1,0 +1,40 @@
+{
+  "workflow": {
+    "nodes": [
+      {"id": "input_node", "type": "Input", "label": "User Input", "nodeCategory": "input"},
+      {"id": "scenario_generator", "type": "Agent", "label": "Scenario Generator", "nodeCategory": "agent", "agent_id": "69ec62bdbe4c8f6024bc4f39"},
+      {"id": "code_mentor", "type": "Agent", "label": "Code Mentor", "nodeCategory": "agent", "agent_id": "69ec62bd913abe53de549399"},
+      {"id": "output_node", "type": "Output", "label": "Results Output", "nodeCategory": "end"}
+    ],
+    "edges": [
+      {"source": "input_node", "target": "scenario_generator"},
+      {"source": "input_node", "target": "code_mentor"},
+      {"source": "scenario_generator", "target": "output_node"},
+      {"source": "code_mentor", "target": "output_node"}
+    ]
+  },
+  "agents": [
+    {
+      "node_id": "scenario_generator",
+      "agent_id": "69ec62bdbe4c8f6024bc4f39",
+      "name": "Scenario Generator",
+      "role": "Senior Software Engineer and Technical Interviewer",
+      "model": "gpt-4.1",
+      "provider": "openai",
+      "temperature": 0.85,
+      "top_p": 0.95,
+      "response_schema_file": "response_schemas/scenario_generator_response.json"
+    },
+    {
+      "node_id": "code_mentor",
+      "agent_id": "69ec62bd913abe53de549399",
+      "name": "Code Mentor",
+      "role": "Senior Staff Engineer and Technical Mentor",
+      "model": "gpt-4.1",
+      "provider": "openai",
+      "temperature": 0.4,
+      "top_p": 0.9,
+      "response_schema_file": "response_schemas/code_mentor_response.json"
+    }
+  ]
+}

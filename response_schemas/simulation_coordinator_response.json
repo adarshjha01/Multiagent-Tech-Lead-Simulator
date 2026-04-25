@@ -1,0 +1,22 @@
+{
+  "agent_name": "Simulation Coordinator",
+  "agent_id": "69ec5deadff9d2879ce158fa",
+  "description": "Orchestrates scenario generation, code review, and mentor feedback for the Tech Lead Simulator",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "action_type": "string",
+    "scenario": "string",
+    "review": "string",
+    "mentor_feedback": "string",
+    "score": "number"
+  },
+  "example_response": {
+    "action_type": "sample string",
+    "scenario": "sample string",
+    "review": "sample string",
+    "mentor_feedback": "sample string",
+    "score": 0
+  }
+}

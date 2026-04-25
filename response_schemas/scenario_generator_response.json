@@ -1,0 +1,44 @@
+{
+  "agent_name": "Scenario Generator",
+  "agent_id": "69ec62bdbe4c8f6024bc4f39",
+  "description": "Generates realistic software engineering debugging scenarios that simulate real-world Jira tickets with broken React/JavaScript code",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "status": "string",
+    "message": "string",
+    "result": {
+      "ticket_id": "string",
+      "ticket_title": "string",
+      "ticket_description": "string",
+      "acceptance_criteria": [
+        "string"
+      ],
+      "difficulty": "string",
+      "tags": [
+        "string"
+      ],
+      "broken_code": "string",
+      "hint": "string"
+    }
+  },
+  "example_response": {
+    "status": "sample string",
+    "message": "sample string",
+    "result": {
+      "ticket_id": "sample string",
+      "ticket_title": "sample string",
+      "ticket_description": "sample string",
+      "acceptance_criteria": [
+        "sample string"
+      ],
+      "difficulty": "sample string",
+      "tags": [
+        "sample string"
+      ],
+      "broken_code": "sample string",
+      "hint": "sample string"
+    }
+  }
+}
